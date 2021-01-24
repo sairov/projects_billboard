@@ -2,11 +2,12 @@
 
 Cartelera de Alumnos egresados de algún curso que desean mostrar sus trabajos de finalización.
 
-# Hecho con boilerplate de 11ty(Eleventy) + Webpack + Tailwindcss -> freshStart
+## Hecho con starter de 11ty(Eleventy) + Webpack + Tailwindcss -> FreshStart
 
 - [11ty](https://www.11ty.io/)
 - [Webpack](https://webpack.js.org/)
 - [Tailwindcss](https://tailwindcss.com)
+- [FreshStart Boilerplate](https://github.com/sairov/freshStart)
 
 ## Getting Started - Para empezar:
 
