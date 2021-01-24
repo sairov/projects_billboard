@@ -8,7 +8,11 @@ module.exports = {
     content: ['src/**/*.njk', 'src/**/*.js'],
   } : {},
   theme: {
-    extend: {},
+    fontFamily: {
+      'sans':['Poppins'],
+      'logo': ['Bebas Neue']
+     },
+      extend: {},
   },
   variants: {
     borderWidth:['responsive', 'hover', 'focus']

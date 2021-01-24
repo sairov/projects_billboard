@@ -1,7 +1,7 @@
 {
   "name": "eleventy_webpack_tailwindcss",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecti de Ejemplo sobre cartelera de proyectos finales de Alumnos Egresados",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf _site",
@@ -12,8 +12,13 @@
     "build:eleventy": "ELEVENTY_ENV=production eleventy",
     "build": "run-s clean build:*"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "Eleventy",
+    "11ty",
+    "Webpack",
+    "Tailwindcss"
+  ],
+  "author": "Pablo Martín Rovira, <pmrovira92@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",

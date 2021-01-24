@@ -9,12 +9,12 @@ module.exports = {
     },
     plugins: [new MiniCssExtractPlugin()],
     module: {
-    rules: [
-      {
-        test: /\.css$/,
-        exclude: /node_modules/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
-      }
-    ]
+      rules: [
+        {
+          test: /\.css$/,
+          exclude: /node_modules/,
+          use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+        }
+      ]
     }
 }

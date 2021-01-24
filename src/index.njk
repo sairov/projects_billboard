@@ -1,37 +1,32 @@
 ---
-title: TOPFLY Mar del Plata - Academia de Aviación
+title: PROJECTS BILLBOARD | DEJA TU HUELLA
 layout: layouts/base.njk
 ---
 <main class="container mx-auto px-0 md:px-4  my-5 border-b-4 pb-4">
 
-        <div class="max-w-screen-xl pb-4 my-10 border-b-4 border-gray-500  mx-auto px-4 sm:px-0">
+        <div class="max-w-screen-xl pb-10 my-16 border-b-4 border-gray-500  mx-auto px-4 sm:px-0">
             <div class="text-center lg:text-left">
-                <p class="text-xl leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Tesinas</p>
-                <h3 class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+                <p class="text-md leading-6 text-gray-400 font-semibold tracking-wide uppercase">Proyectos</p>
+                <h3 class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-gray-800 sm:text-4xl sm:leading-10">
                     Trabajos de nuestros egresados
                 </h3>
-                <p class="mt-4 max-w-4xl text-md md:text-xl leading-7 text-gray-700 ">
-                    En TOPFLY queremos que todos tengan las mismas oportunidades, por eso abrimos esta sección para que nuestros alumnos puedan dejar su huella y mostrar los conocientos adquiridos.
+                <p class="mt-4 font-sans max-w-4xl text-md md:text-lg leading-7 text-gray-700 ">
+                    Queremos que todos tengan las mismas oportunidades, por eso abrimos esta sección para que nuestros alumnos puedan dejar su huella y mostrar los conocientos adquiridos.
                 </p>
-                <!-- <button class="transition-colors duration-100 ease-in-out text-gray-600 py-2 pr-4 pl-5 flex w-full appearance-none leading-normal border border-transparent rounded-lg focus:outline-none text-left select-none truncate items-center focus:bg-white focus:border-gray-300 bg-gray-200"><svg class="fill-current pointer-events-none text-gray-600 w-4 h-4 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"></path></svg>Buscar <span class="hidden sm:inline"></span>
-                </button> -->
             </div>
         </div>  
     
     <section class="listado md:grid-cols-2 lg:grid-cols-2">
     {% for alumno in data.alumnos|sort(attribute='apellido') %}
-        <div class="alumno md:flex bg-gray-100 rounded-lg p-6 md:items-center">
+        <div class="alumno md:flex bg-white rounded-lg p-6 md:items-center">
             <img class="h-20 w-20 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6 self-start" src="{{alumno.foto}}" alt="Foto de alumno {{alumno.nombre}} {{alumno.apellido}}">
-            <div class="text-center md:text-left">
+            <div class="text-center md:text-left w-4/5 mx-auto">
                 <div class="flex justify-between items-center">
                     <h3 class="text-xl">{{alumno.nombre}} {{alumno.apellido}}</h3>
                     <h6 class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">{{alumno.nota}}</h6>
                 </div>
-                <h4 class="text-gray-700 text-lg font-semibold uppercase my-2">{{alumno.curso}}</h4>
-                <!-- <div class="text-gray-700 text-md mt-1">{{alumno.email}}</div> -->
-                <!-- <div class="text-gray-600">{{alumno.telefono}}</div> -->
-                <!-- <p class="text-gray-600 mt-1">{{alumno.about}}</p> -->
-                <div class="flex flex-wrap items-center justify-around md:justify-start lg:justify-around">
+                <h4 class="text-gray-600 text-md pb-2 font-semibold uppercase my-2">{{alumno.curso}}</h4>
+                <div class="flex flex-wrap items-center pb-2 justify-around md:justify-start lg:justify-around">
                     <a href="#"><span class="iconify inline-block h-8 w-8 mr-2 text-gray-500" data-icon="carbon:logo-linkedin" data-inline="false"></span>linkedin</a>
                     <a href="mailto:{{alumno.email}}"><span class="iconify inline-block h-6 w-6 mr-2 text-gray-500" data-icon="ri:send-plane-fill" data-inline="false"></span>Contacto</a>
                 </div>
