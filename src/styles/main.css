@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.listado {
+    @apply grid gap-5 grid-cols-1  mt-5;
+}
+
+.alumno {
+    @apply rounded overflow-hidden shadow-md p-6;
+}
+
+h3 {
+    @apply font-bold text-xl mb-2 uppercase text-gray-700
+}
